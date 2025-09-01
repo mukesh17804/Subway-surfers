@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The One with the Dash</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3A234B"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>The One with the Dash</h1>
+    <p class="subtitle">An original endless-runner with a cozy, Friends-inspired vibe.</p>
+  </header>
+  <main>
+    <div class="controls">
+      <button id="startBtn">Start Run</button>
+      <button id="musicBtn">Play Music</button>
+      <div class="score">Score: <span id="score">0</span></div>
+    </div>
+    <canvas id="game" width="600" height="700" aria-label="The One with the Dash game"></canvas>
+    <section class="howto">
+      <h2>How to play</h2>
+      <ul>
+        <li>Swipe or use arrow keys to switch lanes (3 lanes).</li>
+        <li>Jump to avoid obstacles, slide to dodge low barriers.</li>
+        <li>Collect coffee cups for points and hearts for extra lives.</li>
+      </ul>
+      <p class="note">A fan-inspired theme only — no copyrighted names, logos, or characters included.</p>
+    </section>
+    <div class="mobile-controls">
+      <button id="leftBtn">◀</button>
+      <button id="jumpBtn">Jump</button>
+      <button id="rightBtn">▶</button>
+    </div>
+  </main>
+  <audio id="bgAudio" src="bg_loop.wav" loop preload="auto"></audio>
+  <footer>Installable PWA — works offline once loaded.</footer>
+  <script src="game.js"></script>
+</body>
+</html>
